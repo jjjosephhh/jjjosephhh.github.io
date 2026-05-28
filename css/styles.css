@@ -18,19 +18,48 @@ body {
 
 .fullscreen-container {
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000; /* Backdrop for contain fit */
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .responsive-image {
-    max-height: 100%;
-    max-width: 100%;
+    display: block;
+    max-height: 100vh;
+    max-width: 100vw;
     width: auto;
     height: auto;
-    object-fit: contain;
+}
+
+.map-link {
+    position: absolute;
+    display: block;
+    /* Optional: make them semi-transparent so you can see the image behind */
+    opacity: 0; 
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.map-link:hover {
+    opacity: 0.05;
+}
+
+.map-link.phone {
+    background-color: white;
+}
+
+.map-link.instagram {
+    background-color: white;
 }
 
 /* For image map responsiveness */

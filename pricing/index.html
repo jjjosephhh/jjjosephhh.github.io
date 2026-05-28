@@ -8,17 +8,17 @@
 </head>
 <body>
     <div class="fullscreen-container">
-        <img src="../images/prices.png" alt="Fluffiness Pet Spa Prices" usemap="#price-map" class="responsive-image">
-        
-        <map name="price-map">
-            <!-- Phone number area (approximately where +571-507-5262 appears on the image) -->
-            <area shape="rect" coords="35,898,207,928" href="sms:+15715075262" alt="Text Us">
+        <div class="image-wrapper">
+            <img src="../images/prices.png" alt="Fluffiness Pet Spa Prices" class="responsive-image">
             
-            <!-- Instagram area (approximately where @gro.omersoo appears on the image) -->
-            <area shape="rect" coords="75,925,195,955" href="https://instagram.com/gro.omersoo" alt="Instagram">
-        </map>
+            <!-- Phone number overlay -->
+            <a href="sms:+15715075262" class="map-link phone" 
+               style="left: 20%; top: 84%; width: 60%; height: 5%;"></a>
+            
+            <!-- Instagram overlay -->
+            <a href="https://instagram.com/gro.omersoo" class="map-link instagram" 
+               style="left: 30%; top: 89%; width: 40%; height: 5%;"></a>
+        </div>
     </div>
-    
-    <script src="../js/imageMapResizer.js"></script>
 </body>
 </html>

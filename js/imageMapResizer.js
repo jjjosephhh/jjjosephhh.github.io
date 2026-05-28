@@ -20,8 +20,8 @@
             
             // Get the original dimensions of the image (assumed to be the dimensions 
             // at which the coordinates were originally specified)
-            const originalWidth = 540; // Based on the image dimensions (adjust if needed)
-            const originalHeight = 960; // Based on the image dimensions (adjust if needed)
+            const originalWidth = 1080; // Based on the actual image dimensions
+            const originalHeight = 1920; // Based on the actual image dimensions
             
             // Calculate scaling factors
             const widthRatio = currentWidth / originalWidth;
