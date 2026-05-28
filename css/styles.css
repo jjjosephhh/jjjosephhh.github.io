@@ -44,23 +44,19 @@ body {
 .map-link {
     position: absolute;
     display: block;
-    /* Optional: make them semi-transparent so you can see the image behind */
+    /* Semi-transparent to see the image text */
     opacity: 0; 
     cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.map-link:hover {
-    opacity: 0.05;
 }
 
 .map-link.phone {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .map-link.instagram {
-    background-color: white;
+    /* background-color: white; */
 }
+
 
 /* For image map responsiveness */
 img[usemap] {
